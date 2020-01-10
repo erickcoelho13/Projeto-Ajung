@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<link href="sources/css/sheets.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="sources/js/jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="sources/js/jquery/plugins/skippr.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#theTarget').skippr({
+					transition: 'fade',
+		            speed: 1000,
+		            easing: 'easeOutQuart',
+		            navType: 'bubble',
+		            childrenElementType: 'div',
+		            arrows: true,
+		            autoPlay: true,
+		            autoPlayDuration: 5000,
+		            keyboardOnAlways: true,
+		            hidePrevious: false
+				});
+			});
+		</script>
+
+		<title>Erick Coelho - Projeto</title>
+	</head>
+
+	<body>
+		<header>
+			<div id="navBar">
+				<div>
+					<figure><a href="#"><img src="assets/images/logos/logo.svg"></a></figure>
+
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Endereço</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div id="banner">
+				<div id="theTarget">
+		            <div style="background-image: url(assets/images/banner/1.jpg)"></div>
+		            <div style="background-image: url(assets/images/banner/2.jpg)"></div>
+		            <div style="background-image: url(assets/images/banner/3.jpg)"></div>
+           		 </div>    
+			</div>
+
+		</header>
+
+		<main>
+			<div>
+				<h2>Busque seu endereço em poucos passos:</h2>
+
+				<form>
+					<input type="text" name="cep" placeholder="Digite seu CEP">
+
+					<input type="submit" value="Buscar">
+				</form>
+			</div>
+
+			<div id="container">
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th>CEP</th>
+								<th>Logradouro</th>
+								<th>Bairro</th>
+								<th>Localidade</th>
+								<th>UF</th>
+								<th>GIA</th>
+								<th>IBGE</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>00000-000</td>
+								<td>Rua Dona Maria</td>	
+								<td>Sao Joao</td>	
+								<td>Sao Paulo</td>	
+								<td>SP</td>	
+								<td>1526</td>	
+								<td>0000000</td>		
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div>
+				<input id="limpar-resultados" type="button" value="Limpar Resultados">
+			</div>
+
+		</main>
+
+		<footer>
+			<div>
+
+				<div id="direitos">
+					<figure><a href="#"><img src="assets/images/logos/logo.svg"></a></figure>
+					<spam>@2018 Direitos reservados.</spam>
+				</div>
+
+				<div id="contato">
+					<h3>Contato</h3>
+					<p>Email: office@example.org</p>
+					<p>Telefone: (+88) 999.888</p>
+					<p>Endereço: 25 Canal St., New York</p>
+				</div>
+
+				<div id="social">
+					<h3>Siga-nos</h3>
+					<a href="#"><img src="assets/images/icons/facebook.svg"></a>
+					<a href="#"><img src="assets/images/icons/instagram.svg"></a>
+					<a href="#"><img src="assets/images/icons/twitter.svg"></a>
+				</div>
+
+			</div>
+		</footer>
+
+	</body>
+</html>

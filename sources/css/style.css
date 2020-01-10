@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 125%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+}
+
+header {
+	position: relative;
+	height: 30em;
+}
+
+header div#navBar {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 5em;
+	z-index: 1;
+}
+
+header div#navBar div{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 80%;
+}
+
+header div#navBar figure {
+	display: flex; 
+	margin: 0;
+	width: 3em;
+}
+
+header div#navBar figure img {
+	width: 100%;
+}
+
+header div#navBar nav {
+	display: flex;
+	align-items: center;
+}
+
+header div#navBar nav ul {
+	display: flex;
+	margin: 0; 
+	padding: 0;	
+}
+
+header div#navBar nav ul li{
+	list-style: none;
+	margin-right: 3em;
+}
+
+header div#navBar nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header div#navBar nav ul li a:hover {
+	font-weight: 700;
+}
+
+header div#navBar nav ul li:last-child {
+	margin-right: 0;
+}
+
+header div#banner {
+	position: absolute;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	width: 100%;
+	height: 30em;
+	z-index: 0;
+}
+
+main {
+	background: url(../../assets/images/backgrounds/1.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 3em 0;
+}
+
+main > div {
+	margin: auto;
+	width: 80%;
+}
+
+main > div h2 {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	text-align: center;	
+}
+
+main > div form{
+	margin: auto;
+	width: 14em;
+	text-align: center;
+}
+
+main > div form input{
+	width: 100%;
+}
+
+main > div form input[type=text] {
+	background: none;
+	padding: 0.5em 1em;
+	color: #FFFFFF; 
+	border: 0;
+	border-bottom: 0.1em solid #FFFFFF;
+}
+
+main > div form input[type=submit] {
+	background: rgba(82,209,146,0.8);
+	margin: 1.7em auto 0;
+	padding: 0 2em;
+	width: initial;
+	height: 2.5em;
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 3em;
+	cursor: pointer;
+}
+
+main > div form input[type=submit]:hover {
+	background: rgba(82,209,146,1);
+}
+
+main > div#container {
+	margin-top: 2em;
+}
+
+main > div#container div {
+	background: rgba(255,255,255,0.4);
+	margin-bottom: 1em;
+	padding: 1em 2em;
+	border-radius: 2em;
+} 
+
+main > div#container div table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+main > div#container div table th {
+	padding: 0.5em;
+	border-bottom: 0.1em solid #FFFFFF;
+}
+
+main > div#container div table td {
+	padding: 0.5em;
+	text-align: center;
+}
+
+main > div:last-child {
+	text-align: center;
+}
+
+main > div:last-child input {
+	background: rgba(255,255,255,0.8);
+	display: inline-block;
+	margin: 1.7em auto 0;
+	padding: 0 2em;
+	width: initial;
+	height: 2.5em;
+	color: #000000;
+	border: 0;
+	border-radius: 3em;
+	cursor: pointer;
+}
+
+main > div:last-child input:hover {
+	background: rgba(255,255,255,1);
+}
+
+footer {
+	background: #000000;
+}
+
+footer > div {
+	margin: auto;
+	padding: 2em 0;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+footer > div div#direitos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer > div div#direitos figure {
+	margin: 0 0 1em;
+}
+
+
+footer > div div#social a {
+	margin-right: 1em;
+}
+
+footer > div div#social a:last-child {
+	margin-right: 0;
+}
+
+footer h3{
+	margin-top: 0;
+	color: rgb(82,209,146);
+}
