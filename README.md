@@ -1,2 +1,2 @@
 # Main Project Ajung
-Here i should put my main projects
+Este é o projeto desenvolvido para a empresa Ajung.
